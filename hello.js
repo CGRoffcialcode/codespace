@@ -17,7 +17,7 @@
             document.querySelector("form").onsubmit = function(){
 
                  const name = document.querySelector("#name").value;
-                 document.querySelector("h1").innerHTML = name;
+                 alert(`Hello, ${name}!`)
             };
 
 
