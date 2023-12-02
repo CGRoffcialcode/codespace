@@ -16,7 +16,12 @@
 
         
         }
-        document.querySelector("button").onclick = hello;
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector("button").onclick = hello;
+
+
+        })
+        
     </script>
     
 </head>
@@ -25,6 +30,4 @@
     <button>Count me</button>
     
 </body>
-
-
 </html>
