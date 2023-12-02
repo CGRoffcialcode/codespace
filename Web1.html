@@ -3,27 +3,20 @@
 <head>
     <title>Hello</title>
     <script>
-        
+        let counter = 0;
 
         function hello(){
-            const heading = document.querySelector("h1");
-        if (heading.innerHTML === "Hello!"){
+            counter++;
+            document.querySelector("h1").innerHTML = counter;
 
-              heading.innerHTML = ("Goodbye!");
+        
         }
-        else{
-            heading.innerHTML = ("Hello!");
-
-            
-        }
-    }
-    
     </script>
     
 </head>
 <body> 
-    <h1>Hello!</h1>
-    <button onclick="hello()">Countme</button>
+    <h1>0</h1>
+    <button onclick="hello()">Count me</button>
     
 </body>
 
