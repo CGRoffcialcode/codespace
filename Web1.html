@@ -6,12 +6,13 @@
         
 
         function hello(){
-        if (document.querySelector("h1").innerHTML === "Hello!"){
+            const heading = document.querySelector("h1");
+        if (heading.innerHTML === "Hello!"){
 
-              document.querySelector("h1").innerHTML = ("Goodbye!");
+              heading.innerHTML = ("Goodbye!");
         }
         else{
-            document.querySelector("h1").innerHTML = ("Hello!");
+            heading.innerHTML = ("Hello!");
 
             
         }
