@@ -3,7 +3,7 @@
 
         function hello(){
             counter++;
-            document.querySelector("h1").innerHTML = counter;
+            document.querySelector("h2").innerHTML = counter;
 
             if (counter % 10 === 0){
 
@@ -14,6 +14,12 @@
         }
         document.addEventListener("DOMContentLoaded", function(){
             document.querySelector("button").onclick = hello;
+            document.querySelector("form").onsubmit = function(){
+
+                 const name = document.querySelector("#name").value;
+                 alert(`Hello, ${name}!`)
+            };
+
 
 
         })
